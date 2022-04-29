@@ -14,7 +14,7 @@ class Movie
 {
     //variabili d'istanza
     private $name;
-    private $director;
+    private $director = 'Unknown';
     private $length;
     private $genre;
 
@@ -63,18 +63,29 @@ class Movie
 }
 
 // Vengono istanziati almeno due oggetti ‘Movie’
+
 $movie1 = new Movie ('Io sono Leggenda', 120, 'Fantascienza apocalittica');
 $movie1->setDirector('Francis Lawrence');
+
+$movie2 = new Movie ('Arcane', 380, 'Adult animation');
 
 ?>
 
 
 <!-- Stampati a schermo i valori delle relative proprietà -->
 
-<div>
+<div style="padding-bottom: 50px;">
     <h1>Film 1</h1>
-    <p><?= $movie1->getName() ?></p>
-    <p><?= $movie1->getDirector() ?></p>
+    <p>Name: <?= $movie1->getName() ?></p>
+    <p>Director: <?= $movie1->getDirector() ?></p>
     <p>Questo film dura: <?= $movie1->getLength() ?> minuti.</p>
-    <p><?= $movie1->getGenre() ?></p>
+    <p>Genere: <?= $movie1->getGenre() ?></p>
+</div>
+
+<div style="padding-bottom: 50px;">
+    <h1>Film 2</h1>
+    <p>Name: <?= $movie2->getName() ?></p>
+    <p>Director: <?= $movie2->getDirector() ?></p>
+    <p>Questo film dura: <?= $movie2->getLength() ?> minuti.</p>
+    <p>Genere: <?= $movie2->getGenre() ?></p>
 </div>
