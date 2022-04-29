@@ -68,7 +68,7 @@ $movie1 = new Movie ('Io sono Leggenda', 120, 'Fantascienza apocalittica');
 $movie1->setDirector('Francis Lawrence');
 
 $movie2 = new Movie ('Arcane', 380, 'Adult animation');
-
+/* Non metto il director per vedere il 'default' */
 ?>
 
 
