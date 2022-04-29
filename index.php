@@ -49,8 +49,8 @@ class Movie
         $this->name;
     }
 
-    public function setDirector(){
-        $this->director;
+    public function setDirector($_director){
+        $this->director = $_director;
     }
 
     public function setLength(){
