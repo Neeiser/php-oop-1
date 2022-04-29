@@ -7,7 +7,7 @@
         => all'interno della classe sono dichiarate delle variabili d'istanza
         => all'interno della classe è definito un costruttore
         => all'interno della classe è definito almeno un metodo
-    3:vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà  
+    3: Vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà  
 */
 
 class Movie
@@ -62,6 +62,19 @@ class Movie
     }
 }
 
-
+// Vengono istanziati almeno due oggetti ‘Movie’
+$movie1 = new Movie ('Io sono Leggenda', 120, 'Fantascienza apocalittica');
+$movie1->setDirector('Francis Lawrence');
 
 ?>
+
+
+<!-- Stampati a schermo i valori delle relative proprietà -->
+
+<div>
+    <h1>Film 1</h1>
+    <p><?= $movie1->getName() ?></p>
+    <p><?= $movie1->getDirector() ?></p>
+    <p>Questo film dura: <?= $movie1->getLength() ?> minuti.</p>
+    <p><?= $movie1->getGenre() ?></p>
+</div>
